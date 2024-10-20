@@ -10,14 +10,15 @@
         In the main method, several commands (PrintCommand, SaveCommand, DeleteCommand) are created to perform different actions on a TaskCommand object.
         The CallCommand object sequentially executes the commands by setting each one and calling execute().
 
-1.2. Chain of Responsibility Pattern (Chain.java)
-
-    Pattern Overview: The Chain of Responsibility Pattern allows a request to be passed along a chain of handlers. Each handler decides whether to handle the request or pass it to the next handler in the chain.
-    Implementation Details in Chain.java:
+Chain of Responsibility Pattern (Chain.java)
+ы Implementation Details in Chain.java:
         The TaskChain class encapsulates the task details, including its name and priority (low, medium, or high).
-        The abstract Handler class defines a handleRequest(TaskChain task) method, implemented by concrete handler classes: LowPH, MedPH, and HighPH. Each handler checks the task's priority and either handles it or passes it to the next handler.
+        The abstract Handler class defines a handleRequest(TaskChain task) method, implemented by concrete handler classes: LowPH, MedPH, and HighPH. Each handler checks the task's             priority and either handles it or passes it to the next handler.
         In the code, the handlers are linked in a chain, processing tasks in order of priority (from low to high).
-    Example Execution in Code:
-        In the main method, several tasks with different priorities (Low, Medium, High) are created.
-        The chain of handlers processes each task based on its priority, either handling it or passing it along.
+        Example Execution in Code:
+      в In the main method, several tasks with different priorities (Low, Medium, High) are created.
+    The chain of handlers processes each task based on its priority, either handling it or passing it along.
+
+ 
+       
         
